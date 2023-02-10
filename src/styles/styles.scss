@@ -289,8 +289,21 @@ button {
     font-size: 16.57px;
     color: #fff;
 
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
+    &:hover {
+      &::placeholder {
+        color: rgba(255, 255, 255, .2);
+      }
+    }
+
     &::placeholder {
       color: #fff;
+      transition: color .3s ease-in-out;
     }
 
     &_name {
