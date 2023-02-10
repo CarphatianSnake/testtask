@@ -10,11 +10,7 @@ const paths = {
   styles: {
     src: 'src/styles/*.scss',
     dest: 'dist/css/'
-  },
-  // scripts: {
-  //   src: 'src/scripts/*.js',
-  //   dest: 'dist/js/'
-  // }
+  }
 }
 
 export function clean() {
