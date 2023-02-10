@@ -39,6 +39,15 @@ p {
   margin: 0;
 }
 
+button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 .heading {
   font-size: 45px;
   line-height: 1;
@@ -49,6 +58,52 @@ p {
     font-weight: 300;
   }
 }
+
+.section-text {
+  margin-bottom: 50px;
+}
+
+.button {
+  border-radius: 11px;
+  border: 1px solid;
+  width: 214px;
+  height: 54px;
+  font-size: 16.57px;
+  transition: background-color .3s ease-in-out;
+
+  &__dark {
+    border-color: #262f32;
+    color: #262f32;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .3);
+    }
+  }
+
+  &__light {
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .3);
+    }
+  }
+}
+
+.Rounded_Rectangle_1 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(38, 47, 50);
+  border-radius: 11px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 666px;
+  top: 1018px;
+  width: 214px;
+  height: 54px;
+  z-index: 23;
+}
+
 
 .wrapper {
   display: flex;
@@ -113,6 +168,7 @@ p {
   grid-template-areas: "aside best-starting"
                        "aside verified-dummy";
   grid-template-columns: 614px 752px;
+  grid-template-rows: 1fr 1fr;
 
   &_aside {
     grid-area: aside;
@@ -125,11 +181,14 @@ p {
   }
 
   &_best-starting {
+    padding: 70px 145px 60px 55px;
     grid-area: best-starting;
     background: no-repeat center url('../../assets/img/best-starting.jpg');
   }
 
   &_verified-dummy {
+    padding: 70px 145px 60px 55px;
+    color: #fff;
     grid-area: verified-dummy;
     background: no-repeat center url('../../assets/img/verified-dummy.jpg');
   }
