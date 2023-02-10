@@ -288,13 +288,7 @@ button {
     font-size: 16.57px;
     color: #fff;
 
-    &:focus {
-      &::placeholder {
-        color: transparent;
-      }
-    }
-
-    &:hover {
+    &:hover, &:focus {
       &::placeholder {
         color: rgba(255, 255, 255, .2);
       }
